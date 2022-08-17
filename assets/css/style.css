@@ -1,0 +1,831 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background: url(../img/PAGINA_PRINCIPAL.png) no-repeat;
+    background-size: cover;
+    background-color: #133E6B;
+
+}
+
+/*  */
+
+.username-input {
+    background: url(../img/user.png) no-repeat;
+    background-size: 15px;
+    background-position: 95% center;
+    outline: none;
+    padding: 20px;
+    display: block;
+    width: 200px;
+    height: 1px;
+    border-radius: 3px;
+    border: 1.2px solid rgb(129, 129, 129);
+    margin: 20px auto;
+    /* text-transform: uppercase; */
+}
+
+.password-input {
+    background: url(../img/lock.png) no-repeat;
+    background-size: 15px;
+    background-position: 95% center;
+    outline: none;
+    padding: 20px;
+    display: block;
+    width: 200px;
+    height: 1px;
+    border-radius: 3px;
+    border: 1.2px solid rgb(129, 129, 129);
+    margin: 20px auto;
+    /* text-transform: uppercase; */
+}
+
+.username-input:focus {
+    border-color: #00b8eb;
+
+}
+
+.password-input:focus {
+    border-color: #00b8eb;
+
+}
+
+input[type="submit"]{
+    padding: 10px;
+    display: block;
+    color: #fff;
+    background-color: #0098cb;
+    width: 120px;
+    margin: 20px auto;
+    margin-top: 0;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+input[type="submit"]:hover{
+    background-color: #00b8eb;
+}
+
+header{
+    /* border-bottom: 1px solid rgb(199, 199, 199); */
+    /* background: rgb(2, 40, 66); */
+    /* padding: 10px 0 20px 10px; */
+    padding-top: 10px;
+    /* padding-bottom: 10px; */
+    margin-bottom: 0.5%;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+}
+
+header a{
+    text-decoration: none;
+    color: #333;
+}
+
+.form{
+    margin: 5% auto;
+    padding: 30px;
+    background: white;
+    border-radius: 4px;
+    /* border: 1px solid rgb(97, 97, 97); */
+    box-shadow: 3px 4px 10px black; 
+    width: 350px;
+}
+
+.register{
+    text-decoration: none;
+    text-decoration: bold;
+}
+
+.register:hover{
+    color: rgb(152, 205, 255);
+    text-decoration: underline;
+}
+
+.login-message{
+    color: brown;
+}
+
+.form-title{
+    margin-bottom: 40px;
+}
+
+.tabla{
+    font-size: 18px;
+    background: white;
+    margin: 0.6% auto 0 auto;
+    width: 700px;
+   /* height: 400px; */
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.548);
+}
+
+.filas{
+    height: 45px;
+}
+
+.widget{
+    margin: 10% auto 0 auto;
+}
+
+.sub-title{
+    background: rgb(216, 179, 79);
+    height: 50px;
+    color: white;
+    /* border: 1px solid black; */
+}
+
+.add{
+    font-size: 24px;
+    font-weight: bolder;
+    position: absolute;
+    background-color: rgb(216, 179, 79);
+    transition: background-color .5s;
+    color: white;
+    left: 94%;
+    top: 82%;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    border: 1px solid rgb(204, 159, 37);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.548);
+}
+
+.add:hover{
+    transition: 1s;
+    background-color: rgb(204, 159, 37);
+}
+
+.add:active{
+    /* transition: 1s; */
+    background-color: rgb(65, 47, 0);
+}
+
+/* #my-buttons{
+    background: rgb(216, 179, 79);
+    border-color: rgb(204, 159, 37);
+} */
+
+/* .logo{
+    background: url(../assets/img/logo_cmercam.png);
+} */
+
+.btn-edit-message{
+    /* color: white; */
+    background: url(../img/edit.png) no-repeat;
+    background-size: 60%;
+    background-position: center;
+    background-color: rgb(52, 204, 196);
+    box-shadow: 2px 4px 10px rgba(2, 2, 2, 0.39);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    transition: 1s;
+}
+.btn-edit-message:hover{
+    transition: 1s;
+    background-color: rgb(28, 175, 143);
+}
+.btn-edit-message:active{
+    transition: 1s;
+    background-color: rgb(15, 88, 73);
+}
+
+
+.btn-edit{
+    /* color: white; */
+    background: url(../img/edit.png) no-repeat;
+    background-size: 60%;
+    background-position: center;
+    background-color: rgb(52, 204, 196);
+    border: 1px solid rgb(28, 175, 143);
+    border-radius: 2px;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    transition: 1s;
+}
+.btn-edit:hover{
+    transition: 1s;
+    background-color: rgb(28, 175, 143);
+}
+.btn-edit:active{
+    transition: 1s;
+    background-color: rgb(15, 88, 73);
+}
+
+
+.btn-delete{
+    /* display: none; */
+    color: white;
+    background: url(../img/delete.png) no-repeat;
+    background-size: 50%;
+    background-position: center;
+    background-color: rgb(204, 70, 52);
+    border: 1px solid rgb(211, 99, 48);
+    border-radius: 2px;
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    position: relative;
+    transition: 1s;
+    margin-top: 2px;
+}
+
+.btn-delete:hover{
+    transition: 1s;
+    background-color: rgb(175, 80, 37);
+}
+.btn-delete:active{
+    transition: 1s;
+    background-color: rgb(107, 51, 25);
+}
+
+.fondo-1{
+    background-color: white;
+    color: rgb(93, 93, 93);
+}
+.fondo-11{
+    background-color: rgba(221, 221, 221, 0.335);
+    color: rgb(93, 93, 93);
+}
+
+.fondo-2{
+    background-color: rgb(216, 179, 79);
+    color: white;
+}
+.fondo-22{
+    background-color: rgb(202, 170, 82);
+    color: white;
+}
+
+.coins-alignment{
+    text-align: left;
+}
+
+.flag-margen{
+        margin-right: 5%;
+        margin-left: 15%;
+}
+
+.plata, .oro{
+    margin-right: 5%;
+    margin-left: 15%;
+}
+
+/* .input-divisa{
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    border-radius: 3px;
+    text-align: center;
+    background-color: rgba(107, 51, 25, 0);
+    width: 100px;
+} */
+
+.form-edit-fa{
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.541); 
+    border-radius: 5px;
+    margin: 100px auto;
+    padding: 25px;
+    background-color:white;
+    width: 500px;
+    height: 410px;
+}
+
+.fomr-edit-title{
+    text-align: left;
+    color: rgb(37, 37, 37);
+}
+
+.divider{
+    margin-bottom: 20px;
+    width: 450px;
+    height: 1px;
+    background-color: rgb(209, 209, 209);
+}
+
+.action-buttons{
+    margin-top: 10px;
+    margin-left: 240px;
+}
+
+.save-button{
+    /* margin-left: 300px; */
+    border: 1px solid rgb(172, 135, 34);
+    width: 90px;
+    height: 40px;
+    background: rgb(216, 179, 79);
+    border-radius: 3px;
+    transition: 1s;
+}
+.save-button:hover{
+    transition: 1s;
+    background: rgb(153, 120, 29);
+}
+
+.save-button:active{
+    background: rgb(61, 47, 10);
+    color: white;
+}
+
+.cancel-button{
+    /* margin-left: 100px; */
+    border: 1px solid rgb(71, 71, 71);
+    width: 90px;
+    height: 40px;
+    background: rgb(170, 170, 170);
+    border-radius: 3px;
+    transition: 1s;
+}
+.cancel-button:hover{
+    transition: 1s;
+    background: rgb(71, 71, 71);
+}
+
+.cancel-button:active{
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+.logout-btn{
+    /* font-size: 24px; */
+    /* font-weight: bolder; */
+    position: absolute;
+    background: url(../img/signout.png) no-repeat;
+    background-color: rgb(192, 0, 0);
+    background-position: center;
+    transition: background-color .5s;
+    color: white;
+    left: 94%;
+    top: 90%;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    border: 1px solid rgb(119, 0, 0);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.548);
+}
+
+.logout-btn:hover{
+    transition: 1s;
+    background-color: rgb(133, 83, 83);
+}
+
+.logout-btn:active{
+    /* transition: 1s; */
+    background-color: rgb(44, 0, 0);
+}
+
+/* .principal{
+    margin: auto;
+    display: inline-block;
+}
+
+.flag{
+    padding: 5px;
+    height: 130px;
+    width: 190px;
+    background-color: white;
+    margin-left: 1000px;
+}
+
+.country{
+    position: relative;
+    font-size: 16px;
+    padding: 2px;
+    width: 100px;
+    background-color: rgb(216, 179, 79);
+    color: white;
+    left: -5px;
+    top: -18px;
+}
+
+.p-compra{
+    background-color: white;
+} */
+.divisa{
+    height: 25px;
+    width: 200px;
+    background-color: rgb(202, 170, 82);
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.548);
+    color: white;
+}
+
+.divisa-inf{
+    font-size: 54px;
+    padding: 5px;
+    background-color: rgb(253, 253, 253);
+    color: rgb(136, 136, 136);
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.548);
+}
+
+.margen{
+    height: 15px;
+}
+
+.divisor{
+    width: 40px;
+}
+
+.tabla-2{
+    margin: auto;
+}
+
+.marquesina{
+    display: inline-block;
+    margin: auto auto 3% auto;
+    font-size: 30px;
+    width: 100%;
+    height: 50px;
+    /* left: 40%; */
+    text-transform: uppercase;
+    background-color: rgb(218, 175, 56);
+    color: white;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    box-shadow: 2px 4px 10px rgba(2, 2, 2, 0.39);
+}
+
+.admin{
+    margin: 3% auto 3% auto;
+    position: relative;
+    width: 650px;
+    /* right: 10px; */
+    border-radius: 4px;
+    border: 2px solid white;
+    box-shadow: 2px 4px 10px rgba(2, 2, 2, 0.39);
+}
+
+@media (max-width: 800px){
+    .btn-edit-message{
+        /* color: white; */
+        background: url(../img/edit.png) no-repeat;
+        background-size: 60%;
+        background-position: center;
+        background-color: rgb(52, 204, 196);
+        box-shadow: 2px 4px 10px rgba(2, 2, 2, 0.39);
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 4px;
+        width: 35px;
+        height: 35px;
+        position: relative;
+        transition: 1s;
+    }
+    .marquesina{
+        display: inline-block;
+        margin-bottom: 5%;
+        font-size: 20px;
+        width: 100%;
+        height: 35px;
+        /* left: 40%; */
+        text-transform: uppercase;
+        background-color: rgb(218, 175, 56);
+        color: white;
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+        box-shadow: 2px 4px 10px rgba(2, 2, 2, 0.39);
+    }
+    
+    .admin{
+        margin: 3% auto 3% auto;
+        position: relative;
+        width: 470px;
+        /* right: 10px; */
+        border-radius: 4px;
+        border: 2px solid white;
+        box-shadow: 2px 4px 10px rgba(2, 2, 2, 0.39);
+    }
+    /* .is-admin{
+        display: none;
+    } */
+
+    .tabla{
+        font-size: 15px;
+        background: white;
+        margin: auto;
+        width: 510px;
+       /* height: 400px; */
+        box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.548);
+    }
+
+    .filas{
+        height: 35px;
+    }
+
+    .widget{
+        margin: 20% auto 0 auto;
+    }
+
+    .flag-margen{
+        margin-right: 5%;
+        margin-left: 5%;
+        width: 40px;
+        height: 25px;
+    }
+
+    .plata, .oro{
+        margin-right: 4%;
+        margin-left: 4%;
+        width: 45px;
+        height: 30px;;
+    }
+
+    .sub-title{
+        font-size: 16px;
+        background: rgb(216, 179, 79);
+        height: 35px;
+        color: white;
+        /* border: 1px solid black; */
+    }
+
+    .btn-edit{
+        /* color: white; */
+        background-color: rgb(52, 204, 196);
+        border: 1px solid rgb(28, 175, 143);
+        border-radius: 2px;
+        width: 30px;
+        height: 30px;
+        transition: 1s;
+    }
+
+    .btn-delete{
+        /* display: none; */
+        /* color: white; */
+        background-color: rgb(204, 70, 52);
+        border: 1px solid rgb(211, 99, 48);
+        border-radius: 2px;
+        width: 30px;
+        height: 30px;
+        transition: 1s;
+    }
+
+    .add{
+        font-size: 16px;
+        font-weight: bolder;
+        position: absolute;
+        background-color: rgb(216, 179, 79);
+        transition: background-color .5s;
+        color: white;
+        left: 90%;
+        top: 81%;
+        width: 55px;
+        height: 55px;
+        border-radius: 100%;
+        border: 1px solid rgb(204, 159, 37);
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.548);
+    }
+    
+    .logout-btn{
+        /* font-size: 16px; */
+        /* font-weight: bolder; */
+        position: absolute;
+        background: url(../img/signout.png) no-repeat;
+        background-color: rgb(192, 0, 0);
+        background-position: center;
+        transition: background-color .5s;
+        /* color: white; */
+        left: 90%;
+        top: 90%;
+        width: 55px;
+        height: 55px;
+        border-radius: 100%;
+        border: 1px solid rgb(119, 0, 0);
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.548);
+    }
+    
+    .divisa{
+        width: 150px;
+        background-color: rgb(202, 170, 82);
+        box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.548);
+        color: white;
+    }
+
+    .big-flag{
+        height: 70px;
+        width: 150px;
+    }
+    
+    .divisa-inf{
+        font-size: 32px;
+        padding: 5px;
+        background-color: rgb(253, 253, 253);
+        color: rgb(136, 136, 136);
+        box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.548);
+    }
+    
+    .margen{
+        height: 20px;
+    }
+    
+    .divisor{
+        width: 20px;
+    }
+    
+    .tabla-2{
+        margin: auto auto 28px auto;
+    }
+}
+
+
+@media (max-width: 600px){
+    .btn-edit-message{
+        /* color: white; */
+        background: url(../img/edit.png) no-repeat;
+        background-size: 60%;
+        background-position: center;
+        background-color: rgb(52, 204, 196);
+        box-shadow: 2px 4px 10px rgba(2, 2, 2, 0.39);
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 4px;
+        width: 35px;
+        height: 35px;
+        position: relative;
+        transition: 1s;
+    }
+    .marquesina{
+        display: inline-block;
+        margin-bottom: 5%;
+        font-size: 20px;
+        width: 100%;
+        height: 35px;
+        /* left: 40%; */
+        text-transform: uppercase;
+        background-color: rgb(218, 175, 56);
+        color: white;
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+        box-shadow: 2px 4px 10px rgba(2, 2, 2, 0.39);
+    }
+    
+    .admin{
+        margin: 3% auto 3% auto;
+        position: relative;
+        width: 320px;
+        /* right: 10px; */
+        border-radius: 4px;
+        border: 2px solid white;
+        box-shadow: 2px 4px 10px rgba(2, 2, 2, 0.39);
+    }
+
+    .is-admin{
+        display: none;
+    }
+
+    .widget{
+        margin: 20% auto 0 auto;
+    }
+
+    .tabla{
+        font-size: 12px;
+        background: white;
+        margin: auto;
+        width: 350px;
+       /* height: 400px; */
+        box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.548);
+    }
+
+    
+    .filas{
+        height: 30px;
+    }
+
+    .sub-title{
+        font-size: 12px;
+        background: rgb(216, 179, 79);
+        height: 30px;
+        color: white;
+        /* border: 1px solid black; */
+    }
+
+    .divisa{
+        font-size: 12px;
+        width: 100px;
+        background-color: rgb(202, 170, 82);
+        box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.548);
+        color: white;
+    }
+
+    .big-flag{
+        height: 50px;
+        width: 100px;
+    }
+    
+    .divisa-inf{
+        font-size: 22px;
+        padding: 5px;
+        background-color: rgb(253, 253, 253);
+        color: rgb(136, 136, 136);
+        box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.548);
+    }
+
+    
+    .add{
+        font-size: 16px;
+        font-weight: bolder;
+        position: absolute;
+        background-color: rgb(216, 179, 79);
+        transition: background-color .5s;
+        color: white;
+        left: 81%;
+        top: 81%;
+        width: 55px;
+        height: 55px;
+        border-radius: 100%;
+        border: 1px solid rgb(204, 159, 37);
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.548);
+    }
+    
+    .logout-btn{
+        /* font-size: 16px; */
+        /* font-weight: bolder; */
+        position: absolute;
+        background: url(../img/signout.png) no-repeat;
+        background-color: rgb(192, 0, 0);
+        background-position: center;
+        transition: background-color .5s;
+        /* color: white; */
+        left: 81%;
+        top: 90%;
+        width: 55px;
+        height: 55px;
+        border-radius: 100%;
+        border: 1px solid rgb(119, 0, 0);
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.548);
+    }
+
+    .form-edit-fa{
+        font-size: 12px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.541); 
+        border-radius: 5px;
+        margin: 100px auto;
+        padding: 25px;
+        background-color:white;
+        width: 90%;
+        height: 50%;
+    }
+    
+    .fomr-edit-title{
+        text-align: left;
+        color: rgb(37, 37, 37);
+    }
+    
+    .divider{
+        margin-bottom: 20px;
+        width: 100%;
+        height: 1px;
+        background-color: rgb(209, 209, 209);
+    }
+    
+    .action-buttons{
+        margin-top: 10px;
+        margin-left: 180px;
+    }
+    .save-button{
+        /* margin-left: 300px; */
+        border: 1px solid rgb(172, 135, 34);
+        width: 65px;
+        height: 30px;
+        background: rgb(216, 179, 79);
+        border-radius: 3px;
+        transition: 1s;
+    }
+    .cancel-button{
+        /* margin-left: 100px; */
+        border: 1px solid rgb(71, 71, 71);
+        width: 65px;
+        height: 30px;
+        background: rgb(170, 170, 170);
+        border-radius: 3px;
+        transition: 1s;
+    }
+}
+
+
+
+@media (max-width: 500px){
+    .marquesina{
+        margin-bottom: 8%;
+    }
+
+    .widget{
+        margin: 30% auto 0 auto;
+    }
+
+    .action-buttons{
+        margin-top: 10px;
+        margin-left: 140px;
+    }
+
+    .form{
+        margin: 5% auto;
+        padding: 20px;
+        background: white;
+        border-radius: 4px;
+        /* border: 1px solid rgb(97, 97, 97); */
+        box-shadow: 3px 4px 8px black; 
+        width: 80%;
+    }
+}
